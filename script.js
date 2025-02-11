@@ -1,44 +1,65 @@
-// Función para navegar entre secciones
-function navigateTo(section) {
-  const sections = document.querySelectorAll('.section');
-  sections.forEach((s) => {
-    s.style.display = 'none';
-  });
-  document.getElementById(section).style.display = 'block';
+// Navigation Functions
+function navigateTo(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Show selected section
+    const selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+        // Smooth scroll to section
+        selectedSection.scrollIntoView({ behavior: 'smooth' });
+    }
 }
 
-// Función para abrir el modal
+// Modal Functions
 function openModal() {
-  const modal = document.getElementById('modal');
-  modal.style.display = 'block';
+    const modal = document.getElementById('modal');
+    modal.style.display = 'block';
 }
 
-// Función para cerrar el modal
 function closeModal() {
-  const modal = document.getElementById('modal');
-  modal.style.display = 'none';
+    const modal = document.getElementById('modal');
+    modal.style.display = 'none';
 }
 
-// Evento para cerrar el modal al hacer clic en el botón de cierre
-document.getElementById('close-modal').addEventListener('click', closeModal);
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target === modal) {
+        closeModal();
+    }
+}
 
-// Evento para cerrar el modal al hacer clic fuera del contenido del modal
-document.getElementById('modal').addEventListener('click', (e) => {
-  if (e.target === document.getElementById('modal')) {
+// Form Submission
+document.getElementById('suggestionForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    const mensaje = document.getElementById('mensaje').value;
+    
+    // Here you would typically send the data to a server
+    // For now, we'll just show an alert
+    alert('¡Gracias por tu sugerencia! La tendremos en cuenta.');
+    
+    // Clear form and close modal
+    document.getElementById('mensaje').value = '';
     closeModal();
-  }
 });
 
+// Show initial section on page load
+document.addEventListener('DOMContentLoaded', function() {
+    navigateTo('inicio');
+});
 
-Recuerda que debes agregar un elemento HTML con el id "modal" para que el script funcione correctamente. Por ejemplo:
-
-
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span id="close-modal" class="close">&times;</span>
-    <!-- Contenido del modal -->
-  </div>
-</div>
-
-
-
+// Smooth scrolling for navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const sectionId = this.getAttribute('href').substring(1);
+        navigateTo(sectionId);
+    });
+});
