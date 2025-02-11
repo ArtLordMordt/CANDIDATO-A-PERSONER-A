@@ -5,156 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campaña Personero - Jefferson Rodríguez Contreras</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <h1>Campaña Personero - Jefferson Rodríguez Contreras</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio" onclick="navigateTo('inicio')">Inicio</a></li>
-                <li><a href="#plan" onclick="navigateTo('plan')">Plan de Acción</a></li>
-                <li><a href="#problemas" onclick="navigateTo('problemas')">Problemáticas y Soluciones</a></li>
-                <li><a href="#actualizaciones" onclick="navigateTo('actualizaciones')">Actualizaciones</a></li>
-                <li><a href="#sugerencias" onclick="openModal()">Buzón de Sugerencias</a></li>
-            </ul>
-        </nav>
+        <h1>Jefferson Rodríguez Contreras</h1>
+        <p>¡Tu mejor opción para la personería estudiantil!</p>
     </header>
 
-    <main id="main-content">
-        <section id="inicio" class="section">
-            <h2>Bienvenidos</h2>
-            <p>Mi nombre es Jefferson Rodríguez Contreras. Estoy postulándome como personero estudiantil con el objetivo de mejorar nuestra institución. A lo largo de mi vida escolar, he experimentado varios desafíos y oportunidades en diferentes instituciones, lo que me ha permitido desarrollar una visión integral para nuestra escuela. Mi compromiso es trabajar arduamente para resolver las problemáticas identificadas y mejorar la calidad de vida de todos los estudiantes.</p>
-        </section>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="openModal('problematicas')">Problemáticas y Soluciones</a></li>
+            <li><a href="#" onclick="openModal('logros')">Logros del Gobierno Escolar</a></li>
+            <li><a href="#" onclick="openModal('sugerencias')">Buzón de Sugerencias</a></li>
+            <li><a href="#" onclick="openModal('sobreMi')">Sobre Mí</a></li>
+        </ul>
+    </nav>
 
-        <section id="plan" class="section" style="display:none;">
-            <h2>Plan de Acción para la Institución</h2>
-            <p>Para abordar las problemáticas identificadas en la institución, se implementarán soluciones efectivas, acompañadas de estrategias de financiamiento que garanticen la viabilidad de cada propuesta.</p>
-            <h3>Estrategias de Financiamiento</h3>
-            <ul>
-                <li><strong>Cooperativas estudiantiles:</strong> Estas cooperativas venderán productos como alimentos y útiles escolares para generar ingresos. Los estudiantes participarán activamente en la gestión de estas cooperativas, lo que les proporcionará una valiosa experiencia en administración y trabajo en equipo.</li>
-                <li><strong>Rifas:</strong> Se organizarán rifas con premios atractivos para incentivar la participación de toda la comunidad. Los fondos recaudados se destinarán a mejorar las instalaciones y adquirir materiales necesarios.</li>
-                <li><strong>Jean Day:</strong> Se permitirá a los estudiantes asistir con ropa casual a cambio de una pequeña contribución económica. Esta actividad no solo recaudará fondos, sino que también fomentará un ambiente más relajado y amigable.</li>
-                <li><strong>Gestión de apoyo de entidades gubernamentales:</strong> Contactaremos a la Secretaría de Educación, la Alcaldía y la Gobernación para obtener ayuda económica o en dotación de equipos y materiales necesarios. La colaboración con estas entidades es crucial para asegurar recursos suficientes y sostenibles.</li>
-            </ul>
-            <p>Se garantizará que todas las sedes de la institución sean beneficiadas. Aunque la sede A recibe más atención por ser la principal y la más grande, se velará por la equidad en el acceso a mejoras y recursos para todas las sedes, asegurando un correcto funcionamiento y una educación de calidad para los estudiantes de cada una.</p>
-        </section>
-
-        <section id="problemas" class="section" style="display:none;">
-            <h2>Problemáticas y Soluciones</h2>
-            <div class="tarjeta">
-                <h3>Medioambientales y Salubridad</h3>
-                <p><strong>Problemáticas:</strong></p>
-                <ul>
-                    <li><strong>Cestos de basura en mal estado:</strong> Los cestos de basura existentes están deteriorados y no cumplen con su función de manera eficiente.</li>
-                    <li><strong>Cuarto de separación de residuos desorganizado:</strong> La falta de organización en el cuarto de separación de residuos dificulta el adecuado manejo de los desechos.</li>
-                    <li><strong>Agua contaminada:</strong> La calidad del agua en la institución no es adecuada para el consumo, lo que representa un riesgo para la salud de los estudiantes.</li>
-                    <li><strong>Animales en el ambiente escolar:</strong> La presencia de animales en la escuela puede causar problemas de higiene y seguridad.</li>
-                    <li><strong>Falta de conciencia ambiental y descuido de las zonas comunes:</strong> Muchos estudiantes no tienen conciencia sobre la importancia de cuidar el medio ambiente y mantener limpias las áreas comunes.</li>
-                </ul>
-                <p><strong>Soluciones:</strong></p>
-                <ul>
-                    <li><strong>Jornadas de trabajo con horas sociales y apoyo de los profesores:</strong> Se organizarán jornadas de trabajo en las que los estudiantes, junto con los profesores David y don Sergio, repararán y ubicarán estratégicamente los cestos de basura. Esta actividad no solo mejorará las instalaciones, sino que también fomentará el trabajo en equipo y el sentido de pertenencia.</li>
-                    <li><strong>Reacondicionamiento del cuarto de separación de residuos:</strong> Supervisada personalmente, se llevará a cabo una reorganización del cuarto de separación de residuos para asegurar un manejo adecuado de los desechos. Se implementarán sistemas de clasificación y etiquetado para facilitar el proceso.</li>
-                    <li><strong>Mejora de la calidad del agua:</strong> Se construirá un filtro casero y se adquirirá un filtro comercial para asegurar que el agua sea apta para el consumo. Además, se realizarán pruebas periódicas para monitorear la calidad del agua.</li>
-                    <li><strong>Búsqueda de hogares responsables para los animales:</strong> Se promoverán campañas de adopción responsable para los gatos y perros presentes en la institución, priorizando la salud y seguridad de los estudiantes y el bienestar de los animales.</li>
-                    <li><strong>Implementación de campañas de concientización:</strong> Se llevarán a cabo campañas educativas para concienciar a los estudiantes sobre la importancia de la limpieza, el cuidado ambiental y la preservación de zonas comunes. Se implementarán medidas disciplinarias para quienes persistan en dañar las instalaciones tras reiterados llamados de atención.</li>
-                </ul>
-            </div>
-            <div class="tarjeta">
-                <h3>Infraestructura y Servicios Básicos</h3>
-                <p><strong>Problemáticas:</strong></p>
-                <ul>
-                    <li><strong>Luces infuncionales en los baños:</strong> Muchos baños carecen de iluminación adecuada, lo que dificulta su uso.</li>
-                    <li><strong>Falta de papel higiénico:</strong> La ausencia de papel higiénico en los baños es un problema recurrente que afecta la higiene de los estudiantes.</li>
-                    <li><strong>Malos olores y manchas en los baños:</strong> Los baños suelen estar sucios y presentar malos olores, lo que los hace incómodos de usar.</li>
-                    <li><strong>Un retrete no funciona:</strong> Algunos retretes están fuera de servicio, lo que reduce la capacidad disponible para los estudiantes.</li>
-                    <li><strong>Mosaicos sin pintar en el tercer retrete de derecha a izquierda:</strong> Los baños presentan mosaicos sin pintar, lo que afecta su apariencia y funcionalidad.</li>
-                    <li><strong>Incomodidad debido a herramientas almacenadas en el baño de mujeres:</strong> La presencia de herramientas de trabajo en el baño de mujeres causa incomodidad a las estudiantes.</li>
-                    <li><strong>Mensajes de odio en las paredes:</strong> Las paredes de los baños presentan mensajes ofensivos que afectan el ambiente escolar.</li>
-                    <li><strong>Una puerta no cierra correctamente:</strong> Algunas puertas no cierran adecuadamente, lo que afecta la privacidad de los estudiantes.</li>
-                    <li><strong>Lavamanos en mal estado:</strong> Algunos lavamanos están dañados y no funcionan correctamente.</li>
-                    <li><strong>Dispensadores de jabón dañados:</strong> Muchos dispensadores de jabón están rotos o no funcionan, lo que afecta la higiene de los estudiantes.</li>
-                    <li><strong>Salones calurosos con poca circulación de aire:</strong> La falta de ventilación en los salones hace que sean calurosos e incómodos, especialmente en épocas de calor.</li>
-                    <li><strong>Falta de iluminación en algunos espacios:</strong> Algunos espacios de la escuela carecen de iluminación adecuada, lo que dificulta su uso y afecta la seguridad.</li>
-                    <li><strong>Tabletas sueltas en el piso y en otras áreas:</strong> Las tabletas sueltas en el piso y otras áreas representan un riesgo de accidentes.</li>
-                </ul>
-                <p><strong>Soluciones:</strong></p>
-                <ul>
-                    <li><strong>Cambio de luces y compra de bombillas nuevas:</strong> Se reemplazarán las bombillas dañadas y se instalarán nuevas en todas las áreas que lo requieran.</li>
-                    <li><strong>Suministro constante de papel higiénico:</strong> Se implementará un sistema de monitoreo y abastecimiento constante de papel higiénico para asegurar que nunca falte en los baños.</li>
-                    <li><strong>Limpieza profunda y periódica de los baños:</strong> Se llevará a cabo una limpieza profunda de los baños y se establecerá un cronograma de mantenimiento frecuente para mantenerlos en buen estado.</li>
-                    <li><strong>Colocación de aromatizantes:</strong> Se colocarán aromatizantes en los baños para mantener un ambiente agradable y libre de malos olores.</li>
-                    <li><strong>Reparación del sanitario fuera de servicio:</strong> Se repararán los sanitarios dañados para aumentar la capacidad disponible y asegurar su correcto funcionamiento.</li>
-                    <li><strong>Finalización del pintado de los mosaicos en los baños:</strong> Se completará el pintado de mosaicos en los baños para mejorar su apariencia y funcionalidad.</li>
-                    <li><strong>Reubicación de las herramientas almacenadas en el baño de mujeres:</strong> Se buscará un lugar adecuado para almacenar las herramientas, evitando que causen incomodidad a las estudiantes.</li>
-                    <li><strong>Eliminación de los mensajes ofensivos en las paredes:</strong> Se eliminarán los mensajes ofensivos y se llevarán a cabo charlas sobre convivencia y respeto para evitar que se repitan estas conductas.</li>
-                    <li><strong>Reparación de la puerta que no cierra correctamente:</strong> Se repararán las puertas dañadas para asegurar la privacidad y comodidad de los estudiantes.</li>
-                    <li><strong>Mantenimiento y reparación de los lavamanos en mal estado:</strong> Se llevarán a cabo reparaciones y mantenimiento de los lavamanos para asegurar su correcto funcionamiento.</li>
-                    <li><strong>Arreglo de los dispensadores de jabón dañados:</strong> Se repararán los dispensadores de jabón y se asegurará un abastecimiento constante, con campañas para evitar el desperdicio.</li>
-                    <li><strong>Instalación de ventiladores en los salones:</strong> Se instalarán ventiladores en los salones con poca ventilación y, si es necesario, se retirarán algunos vidrios para mejorar la circulación del aire.</li>
-                    <li><strong>Reparación de lámparas y reposición de bombillos:</strong> Se repararán las lámparas dañadas y se repondrán los bombillos en todas las áreas que lo requieran.</li>
-                    <li><strong>Arreglo de las tabletas del piso y otras áreas:</strong> Se repararán las tabletas sueltas en el piso y otras áreas para mejorar la seguridad y la estética.</li>
-                </ul>
-            </div>
-            <div class="tarjeta">
-                <h3>Académica y Recreación</h3>
-                <p><strong>Problemáticas:</strong></p>
-                <ul>
-                    <li><strong>Poca utilización de la tecnología en la biblioteca y en las clases:</strong> La tecnología disponible no se utiliza de manera efectiva para mejorar el aprendizaje.</li>
-                    <li><strong>Actividades recreativas poco llamativas:</strong> Las actividades recreativas actuales no son atractivas para los estudiantes.</li>
-                    <li><strong>Clases poco dinámicas:</strong> Los métodos de enseñanza tradicionales no logran captar el interés de los estudiantes.</li>
-                    <li><strong>Falta de material deportivo:</strong> La escasez de material deportivo limita las actividades físicas y recreativas.</li>
-                    <li><strong>Organización deficiente de las interclases:</strong> La falta de organización en las interclases afecta la participación y el disfrute de los estudiantes.</li>
-                </ul>
-                <p><strong>Soluciones:</strong></p>
-                <ul>
-                    <li><strong>Fomento del uso de herramientas tecnológicas:</strong> Se llevarán a cabo campañas con los profesores David y Angélica para fomentar el uso adecuado de las herramientas tecnológicas, enseñando a los estudiantes a construir, desarmar y experimentar con la tecnología.</li>
-                    <li><strong>Transformación de actividades recreativas:</strong> Se diseñarán propuestas más didácticas y llamativas para las actividades recreativas, con el objetivo de captar el interés de los estudiantes y fomentar su participación.</li>
-                    <li><strong>Motivación para participar en actividades extracurriculares:</strong> Se implementarán estrategias para motivar a los estudiantes a participar en actividades extracurriculares, ofreciendo una variedad de opciones que se adapten a sus intereses.</li>
-                    <li><strong>Aplicación de estrategias de enseñanza dinámicas:</strong> Se dialogará con los docentes para aplicar estrategias de enseñanza más dinámicas y adaptadas a las necesidades de los estudiantes, promoviendo un aprendizaje activo y participativo.</li>
-                    <li><strong>Compra de implementos deportivos:</strong> Se adquirirán implementos deportivos como balones de fútbol y voleibol para mejorar las actividades físicas y recreativas.</li>
-                    <li><strong>Organización estructurada de las interclases:</strong> Se mejorará la organización de las interclases para asegurar una participación activa y el desarrollo deportivo de los estudiantes.</li>
-                </ul>
-            </div>
-            <div class="tarjeta">
-                <h3>Convivencia y Cultura Alimentaria</h3>
-                <p><strong>Problemáticas:</strong></p>
-                <ul>
-                    <li><strong>Desperdicio de comida por parte de los estudiantes:</strong> Muchos estudiantes desperdician comida, lo que representa una pérdida de recursos y un problema ambiental.</li>
-                    <li><strong>Falta de control sobre la manipulación de la comida en primaria:</strong> Los estudiantes de primaria no reciben la supervisión adecuada durante la hora del almuerzo, lo que puede llevar a problemas de higiene y desperdicio de alimentos.</li>
-                </ul>
-                <p><strong>Soluciones:</strong></p>
-                <ul>
-                    <li><strong>Campañas de sensibilización sobre la importancia de no desperdiciar alimentos:</strong> Se llevarán a cabo campañas educativas para concienciar a los estudiantes sobre la importancia de no desperdiciar alimentos y el impacto que esto tiene en el medio ambiente y en la economía de la institución.</li>
-                    <li><strong>Supervisión durante la hora del almuerzo:</strong> Se coordinará con los docentes de primaria para supervisar el comportamiento de los estudiantes durante la hora del almuerzo, asegurando una manipulación adecuada de los alimentos y reduciendo el desperdicio.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="actualizaciones" class="section" style="display:none;">
-            <h2>Actualizaciones</h2>
-            <p>Este espacio será actualizado con los logros del gobierno escolar. Aquí se publicarán las metas alcanzadas, los fondos recaudados y cómo se han utilizado. Nuestro objetivo es mantener una transparencia total para que toda la comunidad educativa esté informada sobre el progreso y las mejoras implementadas en la institución.</p>
+    <main>
+        <section id="presentacion">
+            <h2>¡Juntos podemos mejorar nuestra institución!</h2>
+            <p>Descubre nuestras propuestas y cómo trabajaremos para un mejor ambiente escolar.</p>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Jefferson Rodríguez Contreras</p>
-    </footer>
-
-    <div id="buzon">
-        <img src="buzon.png" alt="Buzón de Sugerencias" onclick="openModal()">
-    </div>
-
-    <div id="modal" class="modal">
+    <!-- MODALES -->
+    <div id="modalContainer" class="modal-container">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Buzón de Sugerencias</h2>
-            <form id="suggestionForm">
-                <label for="mensaje">Escribe tu sugerencia:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modalText"></div>
         </div>
     </div>
 
