@@ -62,4 +62,4 @@ document.querySelectorAll('nav a').forEach(anchor => {
         const sectionId = this.getAttribute('href').substring(1);
         navigateTo(sectionId);
     });
-});
+}); fdbfdffdf
